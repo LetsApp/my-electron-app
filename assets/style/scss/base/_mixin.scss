@@ -1,0 +1,120 @@
+/********************************************************************************************************\
+      #Media Queries Mixins
+\*********************************************************************************************************/
+
+/*Note: Values for Media Queries present in `_variables.scss`. Media query mixins in the Mixin file in SCSS/base/_mixin.scss*/
+
+//#Max Media Queries
+
+@mixin lg {
+    @media (max-width:#{$lg}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width:#{$md}) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width:#{$sm}) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media (max-width:#{$xs}) {
+        @content;
+    }
+}
+
+//#Min Media Queries
+
+@mixin lg-min {
+    @media (min-width:#{$lg-min}) {
+        @content;
+    }
+}
+
+@mixin md-min {
+    @media (min-width:#{$md-min}) {
+        @content;
+    }
+}
+
+@mixin sm-min {
+    @media (min-width:#{$sm-min}) {
+        @content;
+    }
+}
+
+@mixin xs-min {
+    @media (min-width:#{$xs-min}) {
+        @content;
+    }
+}
+
+
+//For Internet Explorer
+@mixin ie {
+
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        @content;
+    }
+}
+
+//#Microsoft Edge Browser 12+ (All) - @supports method
+@mixin edge12 {
+    @supports (-ms-ime-align:auto) {
+        @content;
+    }
+}
+
+
+
+/*************************************************************************************************\
+#Custom Media Queries
+\*************************************************************************************************/
+
+/*Add Media Queries that you require Here*/
+
+//#1500 Media Query
+
+//Min 1500 and above
+@mixin min-1500 {
+    @media (min-width:#{$sz-1500}) {
+        @content;
+    }
+}
+
+//Max 1500 and below
+@mixin max-1500 {
+    @media (min-width:#{$sz-1500-max}) {
+        @content;
+    }
+}
+
+
+
+
+//Min 375 and above
+@mixin min-375 {
+    @media (min-width:#{$sz-375}) {
+        @content;
+    }
+}
+
+//Max 375 and below
+@mixin max-375 {
+    @media (max-width:#{$sz-375-max}) {
+        @content;
+    }
+}
+
+
+/********************************************************************************************************\
+      #End Media Queries Mixins
+\*********************************************************************************************************/

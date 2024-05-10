@@ -1,0 +1,168 @@
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+/*-------- #Baseline-------- */
+/*$baseline: 20px*/
+/* -----#Font Base------- */
+/*$line-height-base: 1.5*/
+/*$line-height-content: 1.8*/
+/*$site-font: 'Nunito'*/
+/*$decoration-base: none*/
+/*------ #Font Size Base --------*/
+/* $font-size-base: 18px */
+/* $font-size-h1: 52px */
+/* $font-size-h2: 42px */
+/* $font-size-h3: 38px */
+/* $font-size-h4: 32px */
+/* $font-size-h5: 24px */
+/* $font-size-h6: 18px */
+/* $font-size-button: 14px */
+/* header-size: 36px */
+/* $logo-font: 28.8px */
+/* $header-size-mobile: 24px */
+/* $font-size-base-mobile: 14px */
+/*------ #Letter Spacing ------*/
+/* $logo-letter-spacing: 3.06px */
+/* ------#Background Base------- */
+/*$background-base: no-repeat center center fixed*/
+/*$background-size-base: cover*/
+/*--------#Icon Base ----------*/
+/*$awesome: fontawesome*/
+/* Border-Radius Base */
+/*$radius-5: 5px*/
+/*$radius-6: 6px*/
+/*$radius-10: 10px*/
+/*$radius-50: 50% */
+/************************************************************************************************************\
+ #Media Queries Base Variables
+\************************************************************************************************************/
+/*-------#Max Variables--------*/
+/* $xs: 575px; Mobile Displays and Smaller*/
+/* $sm: 767px; Tablets and Smaller */
+/* $md: 991px; Medium Displays and Smaller */
+/* $lg: 1199px; Large Displays and smaller */
+/*--------#Min Variables-----------*/
+/*$xs-min: 576px; Mobile Displays and Larger */
+/* $sm-min: 768px; Tablets Displays and Larger */
+/* $md-min: 992px; Medium Displays and Larger */
+/* $lg-min: 1200px; Large Displays and Larger */
+/*------Custom Media Queries----------*/
+/* $sz-1500: 1500px; Screen Size 1500px */
+/* $sz-375: 375px; Screen Size 1500px */
+/*------------------------------------*\
+    #END OF VARIABLES
+\*------------------------------------*/
+/********************************************************************************************************\
+      #Media Queries Mixins
+\*********************************************************************************************************/
+/*Note: Values for Media Queries present in `_variables.scss`. Media query mixins in the Mixin file in SCSS/base/_mixin.scss*/
+/*************************************************************************************************\
+#Custom Media Queries
+\*************************************************************************************************/
+/*Add Media Queries that you require Here*/
+/********************************************************************************************************\
+      #End Media Queries Mixins
+\*********************************************************************************************************/
+body {
+  min-height: 100vh;
+}
+
+.main-title {
+  font-size: 40px;
+  line-height: 48px;
+  color: #004D8F;
+}
+@media (max-width: 767px) {
+  .main-title {
+    font-size: 24px;
+  }
+}
+
+.home-screen {
+  background-color: #1256C4;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-btn {
+  color: #004D8F;
+}
+
+.menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.menu-items a {
+  text-align: center;
+  font-size: 18px;
+}
+
+.app-box {
+  border: 2px solid #fff;
+  padding: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.register-device {
+  background-color: #004D8F;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bgColor1 {
+  background: rgb(0, 74, 173);
+}
+
+.bgColor2 {
+  background: rgb(82, 113, 255);
+}
+
+.bgColor3 {
+  background: rgb(0, 191, 99);
+}
+
+.bgColor4 {
+  background: rgb(255, 145, 77);
+}
+
+.counter-cards {
+  padding: 15px;
+  color: #fff;
+}
+.counter-cards .count {
+  font-size: 30px;
+}
+.counter-cards .label {
+  font-size: 18px;
+}

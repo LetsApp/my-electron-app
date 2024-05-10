@@ -1,0 +1,274 @@
+/*-----------------------------------------------------------------------------------
+
+	Theme Name: Layouts
+  Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, harum!
+	Author: Rayner
+	Author URI: https://in.linkedin.com/in/rayner-savio-prazeres-930b2b64
+	Version: 1.0 alpha
+
+-----------------------------------------------------------------------------------*/
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+/*-------- #Baseline-------- */
+/*$baseline: 20px*/
+/* -----#Font Base------- */
+/*$line-height-base: 1.5*/
+/*$line-height-content: 1.8*/
+/*$site-font: 'Nunito'*/
+/*$decoration-base: none*/
+/*------ #Font Size Base --------*/
+/* $font-size-base: 18px */
+/* $font-size-h1: 52px */
+/* $font-size-h2: 42px */
+/* $font-size-h3: 38px */
+/* $font-size-h4: 32px */
+/* $font-size-h5: 24px */
+/* $font-size-h6: 18px */
+/* $font-size-button: 14px */
+/* header-size: 36px */
+/* $logo-font: 28.8px */
+/* $header-size-mobile: 24px */
+/* $font-size-base-mobile: 14px */
+/*------ #Letter Spacing ------*/
+/* $logo-letter-spacing: 3.06px */
+/* ------#Background Base------- */
+/*$background-base: no-repeat center center fixed*/
+/*$background-size-base: cover*/
+/*--------#Icon Base ----------*/
+/*$awesome: fontawesome*/
+/* Border-Radius Base */
+/*$radius-5: 5px*/
+/*$radius-6: 6px*/
+/*$radius-10: 10px*/
+/*$radius-50: 50% */
+/************************************************************************************************************\
+ #Media Queries Base Variables
+\************************************************************************************************************/
+/*-------#Max Variables--------*/
+/* $xs: 575px; Mobile Displays and Smaller*/
+/* $sm: 767px; Tablets and Smaller */
+/* $md: 991px; Medium Displays and Smaller */
+/* $lg: 1199px; Large Displays and smaller */
+/*--------#Min Variables-----------*/
+/*$xs-min: 576px; Mobile Displays and Larger */
+/* $sm-min: 768px; Tablets Displays and Larger */
+/* $md-min: 992px; Medium Displays and Larger */
+/* $lg-min: 1200px; Large Displays and Larger */
+/*------Custom Media Queries----------*/
+/* $sz-1500: 1500px; Screen Size 1500px */
+/* $sz-375: 375px; Screen Size 1500px */
+/*------------------------------------*\
+    #END OF VARIABLES
+\*------------------------------------*/
+/********************************************************************************************************\
+      #Media Queries Mixins
+\*********************************************************************************************************/
+/*Note: Values for Media Queries present in `_variables.scss`. Media query mixins in the Mixin file in SCSS/base/_mixin.scss*/
+/*************************************************************************************************\
+#Custom Media Queries
+\*************************************************************************************************/
+/*Add Media Queries that you require Here*/
+/********************************************************************************************************\
+      #End Media Queries Mixins
+\*********************************************************************************************************/
+/*******************************************************************************************************************************************************************************************************\
+
+                                           DO NOT TOUCH THIS CODE
+
+\********************************************************************************************************************************************************************************************************/
+/*
+<==========================================>
+#Contents
+<==========================================>
+1.  Global
+2.  Reset
+
+*/
+/***********************************************************************************************\
+#1. Gloabal
+\***********************************************************************************************/
+body {
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.chevron::before {
+  border-style: solid;
+  border-width: 0.1em 0.1em 0 0;
+  content: "";
+  display: inline-block;
+  height: 0.45em;
+  left: 0.15em;
+  position: relative;
+  top: 0.15em;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  vertical-align: top;
+  width: 0.45em;
+}
+
+.chevron.right:before {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.chevron.bottom:before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.chevron.left:before {
+  left: 0.25em;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.primary-button {
+  background-color: #FEC103;
+  color: #fff;
+  border: 1px solid #FEC103;
+}
+.primary-button.active {
+  background-color: #FEC103 !important;
+  color: #fff;
+  border: 1px solid #FEC103 !important;
+}
+.primary-button:hover, .primary-button:focus, .primary-button:focus-visible, .primary-button:active {
+  color: #fff;
+  -webkit-box-shadow: 0px 5px 8px rgba(254, 193, 3, 0.49) !important;
+          box-shadow: 0px 5px 8px rgba(254, 193, 3, 0.49) !important;
+  background-color: #e2ab01 !important;
+  border-color: #e2ab01 !important;
+}
+.primary-button.remove-focus-effect:hover, .primary-button.remove-focus-effect:focus, .primary-button.remove-focus-effect:focus-visible, .primary-button.remove-focus-effect:active {
+  color: #FEC103;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background-color: #fff !important;
+}
+.primary-button:disabled, .primary-button.disabled, .primary-button.inactive {
+  background-color: #FEC103;
+  border-color: #FEC103;
+  color: #fff;
+}
+.primary-button--outline {
+  background-color: #fff;
+  color: #FEC103;
+  border: 1px solid #FEC103;
+}
+.primary-button--outline:hover, .primary-button--outline:focus {
+  color: #fff;
+  background-color: #FEC103 !important;
+  border-color: #FEC103 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.secondary-button {
+  background-color: #004D8F;
+  color: #fff;
+}
+.secondary-button:hover, .secondary-button:focus, .secondary-button:focus-visible {
+  background: #003f76;
+  color: #fff;
+  -webkit-box-shadow: 0px 5px 8px rgba(15, 33, 79, 0.58) !important;
+          box-shadow: 0px 5px 8px rgba(15, 33, 79, 0.58) !important;
+}
+.secondary-button:disabled, .secondary-button.disabled {
+  color: #fff;
+  background-color: #004D8F;
+  border-color: #004D8F;
+}
+
+a {
+  color: #004D8F;
+}
+
+.hide-scrollbar {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+textarea {
+  resize: none;
+}
+
+/*******************************************************************************************************************************************************************************************************\
+
+                                           END OF DO NOT TOUCH THIS CODE
+
+\********************************************************************************************************************************************************************************************************/
+/*------------------------------------*\
+    #2. RESET
+\*------------------------------------*/
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a,
+dl,
+dt,
+dd,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+:active,
+:focus {
+  outline: none !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+textarea {
+  resize: none;
+}
+
+::-moz-selection {
+  text-shadow: none;
+}
+
+::selection {
+  text-shadow: none;
+}
+
+::-moz-selection {
+  text-shadow: none;
+}
+
+::-webkit-selection {
+  text-shadow: none;
+}
+
+.form-control {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+a {
+  text-decoration: none;
+}

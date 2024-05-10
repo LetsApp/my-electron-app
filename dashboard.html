@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/style/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/style/fontawesome6.css">
+  <link rel="stylesheet" href="/assets/style/style-dist.css">
+  <link rel="stylesheet" href="/assets//style/app.css">
+  <title>Dashboard</title>
+</head>
+<body>
+ <div class="dashboard py-5">
+    <div class="container">
+<section class="mb-5">
+    <p class="mb-4 main-title">Dashboard</p>
+    
+    <div class="row mb-4 g-3">
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="counter-cards bgColor1">
+            <p class="count">
+                170
+            </p>
+            <p class="label">Departments</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="counter-cards bgColor2">
+            <p class="count">
+                1000
+            </p>
+            <p class="label">Machines</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="counter-cards bgColor3">
+            <p class="count">
+                870
+            </p>
+            <p class="label">Active</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="counter-cards bgColor4">
+            <p class="count">
+                130
+            </p>
+            <p class="label">Offline</p>
+            </div>
+        </div>
+    </div>
+<div class="table-responsive">
+    <table class="table sortable">
+        <thead class="table-light">
+          <tr>
+            <th scope="col">Department</th>
+            <th scope="col">Total Machines</th>
+            <th scope="col">Active</th>
+            <th scope="col">Offline</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr>
+            <th scope="row">Forest Department</th>
+            <td>31</td>
+            <td>26</td>
+            <td>05</td>
+            <th>
+                <a href=""><small>View Details</small></a>
+            </th>
+          </tr>
+
+        </tbody>
+      </table>
+</div>
+</section>
+
+<section class="mb-5">
+    <p class="mb-4 main-title">Goa Tourism</p>
+    <div class="row mb-4 g-3">
+
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="counter-cards bgColor2">
+            <p class="count">
+                1000
+            </p>
+            <p class="label">Machines</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="counter-cards bgColor3">
+            <p class="count">
+                870
+            </p>
+            <p class="label">Active</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="counter-cards bgColor4">
+            <p class="count">
+                130
+            </p>
+            <p class="label">Offline</p>
+            </div>
+        </div>
+    </div>
+<div class="table-responsive">
+    <table class="table sortable">
+        <thead class="table-light">
+          <tr>
+            <th scope="col">Description</th>
+            <th scope="col">MAC Address</th>
+            <th scope="col">Status</th>
+            <th scope="col">Last Active</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr>
+            <th scope="row">Reception PC</th>
+            <td>98:46:0a:a1:ef:90</td>
+            <td><span>ACTIVE</span><i class="fa-sharp fa-solid fa-circle-check ms-3 text-success"></i></td>
+            <td>2024-04-27</td>
+            <th>
+                <a href="">Ping this device</a>
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">Reception PC</th>
+            <td>98:46:0a:a1:ef:90</td>
+            <td><span>ACTIVE</span><i class="fa-sharp fa-solid fa-circle-xmark ms-3 text-danger"></i></td>
+            <td>2024-04-27</td>
+            <th>
+                <a href="">Ping this device</a>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+</div>
+</section>
+
+<section class="mb-5">
+    <p class="mb-4 main-title">Add department</p>
+
+    <div class="form col-md-6 px-0">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="deptName" placeholder="Department Name">
+            <label for="deptName">Department Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="contactPerson" placeholder="Contact Person">
+            <label for="contactPerson">Contact Person</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="emailPhone" placeholder="emailPhone">
+            <label for="deptName">Email / Phone</label>
+          </div>
+          <button class="btn btn-lg secondary-button">
+            Add Department
+          </button>
+    </div>
+
+</section>
+<section class="mb-5">
+    <p class="mb-4 main-title">SRS</p>
+
+  <div class="data mb-4">
+    <h5 class="fw-bold mb-3">Servcer Application</h5>
+    <p>POSTGRESQL Database</p>
+    <p>Node JS server application</p>
+    <p>Dashboard Application to be hosted on Server</p>
+    <p>Landing page to donload .exe application for machines</p>
+  </div>
+  <div class="data">
+    <h5 class="fw-bold mb-3">Client</h5>
+    <p>64 bit windows / Mac OS</p>
+    <p>Network Connectivity</p>
+
+  </div>
+
+</section>
+    </div>
+ </div>
+</body>
+</html>

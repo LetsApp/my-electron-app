@@ -11,7 +11,10 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>Register Device</title>
+    <link rel="stylesheet" href="/assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/style/style-dist.css">
+    <link rel="stylesheet" href="/assets//style/app.css">
+    <title>Download The App</title>
     <style>
       body {
           font-family: Arial, sans-serif;
@@ -28,12 +31,29 @@
   </style>
   </head>
   <body>
-    <h1>Register Device</h1>
-    <select id="deviceSelect">
+    <div class="home-screen">
+      <div class="app-box text-center" >
+       <h1 class="text-white">ITG Machine health check app</h1>
+       <a class="btn primary-button text-uppercase  my-5 home-btn fw-bold btn-lg rounded-0 " href="">
+         Download the App
+       </a>
+       <div class="menu-items">
+         <a href="/register-device.html" class="text-white">
+           Register your machine
+         </a>
+
+         <a href="" class="text-white">
+           Forget about it!!
+         </a>
+      </div>
+       </div>
+     </div>
+    <!-- <h1>Register Device</h1>
+    <select id="deviceSelect"> -->
       <!-- Options will be populated dynamically using JavaScript -->
-  </select>
+  <!-- </select> -->
   <script>
- 
+
 </script>
   </body>
 </html>

@@ -1,0 +1,92 @@
+
+// // ##ARROW
+// .arrow {
+//     position: relative;
+
+//     &:hover {
+
+//         &.right-arrow:before,
+//         &.right-arrow-blue:before {
+//             right: 10px;
+//         }
+
+//         &.left-arrow:before {
+//             left: 10px;
+//         }
+//     }
+
+//     &.right-arrow {
+//         &:before {
+//             content: "";
+//             display: block;
+//             width: 15px;
+//             height: 15px;
+//             position: absolute;
+//             top: 50%;
+//             right: 15px;
+//             -webkit-transform: tranlateY(-50%);
+//             transform: tranlateY(-50%);
+//             background: url("~/assets/img/arrows/right.svg") no-repeat center;
+//             background-size: contain;
+//             transition: all 0.2s ease-in-out 0s;
+
+//             @include xs {
+//                 width: 10px;
+//                 height: 10px;
+//                 top: 40%;
+//             }
+//         }
+
+//         &--double {
+//             &:before {
+//                 background: url("~/assets/img/arrows/right-double.svg") no-repeat center;
+
+//                 @include xs {
+//                     width: 16px;
+//                     height: 16px;
+//                 }
+//             }
+//         }
+//     }
+
+//     &.right-arrow-blue:before {
+//         content: "";
+//         display: block;
+//         width: 15px;
+//         height: 15px;
+//         position: absolute;
+//         top: 50%;
+//         right: 15px;
+//         -webkit-transform: tranlateY(-50%);
+//         transform: tranlateY(-50%);
+//         background: url("~/assets/img/arrows/right-blue.svg") no-repeat center;
+//         background-size: contain;
+//         transition: all 0.2s ease-in-out 0s;
+
+//         @include xs {
+//             width: 10px;
+//             height: 10px;
+//             top: 40%;
+//         }
+//     }
+
+//     &.left-arrow:before {
+//         content: "";
+//         display: block;
+//         width: 15px;
+//         height: 15px;
+//         position: absolute;
+//         top: 50%;
+//         left: 15px;
+//         -webkit-transform: tranlateY(-50%);
+//         transform: tranlateY(-50%);
+//         background: url("~/assets/img/arrows/left-blue.svg") no-repeat center;
+//         background-size: contain;
+//         transition: all 0.2s ease-in-out 0s;
+
+//         @include xs {
+//             width: 10px;
+//             height: 10px;
+//         }
+//     }
+// }

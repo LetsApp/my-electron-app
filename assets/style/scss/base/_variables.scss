@@ -1,0 +1,148 @@
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+
+
+/*-------- #Baseline-------- */
+/*$baseline: 20px*/
+$baseline: 20px;
+
+
+
+/* -----#Font Base------- */
+/*$line-height-base: 1.5*/
+$line-height-base: 1.5;
+
+/*$line-height-content: 1.8*/
+$line-height-content: 1.8;
+
+/*$site-font: 'Nunito'*/
+$site-font: 'Poppins';
+
+
+/*$decoration-base: none*/
+$decoration-base: none;
+
+
+
+/*------ #Font Size Base --------*/
+/* $font-size-base: 18px */
+$font-size-base: 18px;
+
+/* $font-size-h1: 52px */
+$font-size-h1: 52px;
+
+/* $font-size-h2: 42px */
+$font-size-h2: 42px;
+
+/* $font-size-h3: 38px */
+$font-size-h3: 38px;
+
+/* $font-size-h4: 32px */
+$font-size-h4: 32px;
+
+/* $font-size-h5: 24px */
+$font-size-h5: 24px;
+
+/* $font-size-h6: 18px */
+$font-size-h6: 18px;
+
+/* $font-size-button: 14px */
+$font-size-button: 14px;
+
+/* header-size: 36px */
+$header-size: 36px;
+
+/* $logo-font: 28.8px */
+$logo-font: 28.8px;
+
+/* $header-size-mobile: 24px */
+$header-size-mobile: 24px;
+
+/* $font-size-base-mobile: 14px */
+$font-size-base-mobile: 14px;
+
+
+/*------ #Letter Spacing ------*/
+/* $logo-letter-spacing: 3.06px */
+$logo-letter-spacing: 3.06px;
+
+
+
+/* ------#Background Base------- */
+/*$background-base: no-repeat center center fixed*/
+$background-base: no-repeat center center fixed;
+
+/*$background-size-base: cover*/
+$background-size-base: cover;
+
+
+
+/*--------#Icon Base ----------*/
+/*$awesome: fontawesome*/
+$awesome: fontawesome;
+
+/* Border-Radius Base */
+/*$radius-5: 5px*/
+$radius-5: 5px;
+
+/*$radius-6: 6px*/
+$radius-6: 6px;
+
+/*$radius-10: 10px*/
+$radius-10: 10px;
+
+/*$radius-50: 50% */
+$radius-50: 50%;
+
+
+/************************************************************************************************************\
+ #Media Queries Base Variables
+\************************************************************************************************************/
+
+/*-------#Max Variables--------*/
+
+/* $xs: 575px; Mobile Displays and Smaller*/
+$xs: 575px;
+
+/* $sm: 767px; Tablets and Smaller */
+$sm: 767px;
+
+/* $md: 991px; Medium Displays and Smaller */
+$md: 991px;
+
+/* $lg: 1199px; Large Displays and smaller */
+$lg: 1199px;
+
+
+/*--------#Min Variables-----------*/
+
+/*$xs-min: 576px; Mobile Displays and Larger */
+$xs-min: 576px;
+
+/* $sm-min: 768px; Tablets Displays and Larger */
+$sm-min: 768px;
+
+/* $md-min: 992px; Medium Displays and Larger */
+$md-min: 992px;
+
+/* $lg-min: 1200px; Large Displays and Larger */
+$lg-min: 1200px;
+
+
+/*------Custom Media Queries----------*/
+
+/* $sz-1500: 1500px; Screen Size 1500px */
+$sz-1500: 1501px;
+$sz-1500-max: 1500px;
+
+/* $sz-375: 375px; Screen Size 1500px */
+$sz-375: 376px;
+$sz-375-max: 375px;
+
+
+
+
+/*------------------------------------*\
+    #END OF VARIABLES
+\*------------------------------------*/
