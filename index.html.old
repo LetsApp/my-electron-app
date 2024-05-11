@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link rel="stylesheet" href="/assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/style/style-dist.css">
+    <link rel="stylesheet" href="/assets//style/app.css">
+    <title>Download The App</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+      }
+      h1 {
+          margin-top: 50px;
+      }
+      select {
+          margin-top: 20px;
+          padding: 10px;
+          font-size: 16px;
+      }
+  </style>
+  </head>
+  <body>
+    <div class="home-screen">
+      <div class="app-box text-center" >
+       <h1 class="text-white">ITG Machine health check app</h1>
+       <a class="btn primary-button text-uppercase  my-5 home-btn fw-bold btn-lg rounded-0 " href="">
+         Download the App
+       </a>
+       <div class="menu-items">
+         <a href="/register-device.html" class="text-white">
+           Register your machine
+         </a>
+
+         <a href="" class="text-white">
+           Forget about it!!
+         </a>
+      </div>
+       </div>
+     </div>
+    <!-- <h1>Register Device</h1>
+    <select id="deviceSelect"> -->
+      <!-- Options will be populated dynamically using JavaScript -->
+  <!-- </select> -->
+  <script>
+
+</script>
+  </body>
+</html>
