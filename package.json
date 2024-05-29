@@ -1,7 +1,7 @@
 {
-  "name": "my-electron-app",
+  "name": "pc-maintenance-app",
   "version": "1.0.0",
-  "description": "electron trial",
+  "description": "pc maintenance app",
   "main": "index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -9,7 +9,7 @@
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "author": "electron",
+  "author": "Appbuddy Consultancy LLP",
   "license": "ISC",
   "devDependencies": {
     "@electron-forge/cli": "^7.4.0",
@@ -28,8 +28,9 @@
     "diskusage": "^1.2.0",
     "getmac": "^6.6.0",
     "is-online": "^10.0.0",
+    "node-machine-id": "^1.1.12",
     "readline-promise": "^1.0.5",
-    "systeminformation": "^5.22.7",
+    "systeminformation": "^5.22.9",
     "wmi-client": "^0.5.0"
   }
 }

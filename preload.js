@@ -8,6 +8,8 @@ const { ipcRenderer } = require('electron');
     // Populate the dropdown with options
     ipcRenderer.on('devices', (event, data) => {
         const deviceSelect = document.getElementById('deviceSelect');
+        const registerButton = document.getElementById('registerButton');
+        var selectedId = ''
         data.forEach(option => {
             const optionElement = document.createElement('option');
             optionElement.value = option._id;
@@ -17,7 +19,17 @@ const { ipcRenderer } = require('electron');
   
 
     deviceSelect.addEventListener('change', (event) => {
-        const selectedId = event.target.value;
+        selectedId = event.target.value;
         ipcRenderer.send('selected-option', selectedId);
     });
+    registerButton.addEventListener('click', () => {
+        // Invoke the function from index.js
+        if(selectedId!=''){
+            ipcRenderer.send('submit',selectedId );
+        }else{
+
+        }
+        
+    });
+  
 });
