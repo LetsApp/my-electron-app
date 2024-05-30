@@ -18,7 +18,7 @@ var DeviceInfo = require('./deviceInfo')
 var queryString = require('querystring')
 // Check if CSV file exists
 
-const filePath = path.join(__dirname, 'reg.csv');
+const filePath = path.join(app.getPath('userData'), 'reg.csv');
 
 async function checkCSVFile() {
     return await isCSVFileEmpty(filePath).then(isEmpty => {
@@ -123,7 +123,6 @@ app.setLoginItemSettings({
 
 function createRegistrationCSVFile(dept,id) {
     const data = `${dept},${id}`;
-    var filePath = path.join(__dirname, 'reg.csv')
     fs.writeFileSync(filePath, data, (err) => {
         if (err) throw err;
         console.log('CSV file created successfully.');
@@ -241,7 +240,7 @@ function registerDevice(id){
 
 
 function readAndLogCSV() {
-    const fileStream = fs.createReadStream(path.join(__dirname, 'reg.csv'));
+    const fileStream = fs.createReadStream(path.join(app.getPath('userData'), 'reg.csv'));
     const rl = readline.createInterface({
         input: fileStream
     });
