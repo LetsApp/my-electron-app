@@ -16,7 +16,6 @@ const process = require('process');
 var connectionManager = require('./connectionManager')
 var DeviceInfo = require('./deviceInfo')
 var queryString = require('querystring')
-require('electron-reloader')(module);
 // Check if CSV file exists
 function checkCSVFile() {
     return fs.existsSync(path.join(__dirname, 'reg.csv'));
