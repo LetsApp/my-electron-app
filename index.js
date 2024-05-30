@@ -17,14 +17,26 @@ var connectionManager = require('./connectionManager')
 var DeviceInfo = require('./deviceInfo')
 var queryString = require('querystring')
 // Check if CSV file exists
-function checkCSVFile() {
-    return fs.existsSync(path.join(__dirname, 'reg.csv'));
+
+const filePath = path.join(__dirname, 'reg.csv');
+
+async function checkCSVFile() {
+    return await isCSVFileEmpty(filePath).then(isEmpty => {
+        if (isEmpty) {
+            return false
+        } else {
+            return true
+        }
+    })
+    .catch(err => {
+        console.error('Error checking CSV file:', err);
+    });
 }
 
-function createWindow() {
+async function createWindow() {
     // Create the browser window
-
-    if(!checkCSVFile()){
+var registered = await checkCSVFile()
+    if(!registered){
    var devices = []
    var dept = ''
         
@@ -350,4 +362,20 @@ function checkInternetConnectivity(retries = 10, delay = 120000) {
     }
 
     checkConnectivity();
+}
+
+
+
+function isCSVFileEmpty(filePath) {
+    return new Promise((resolve, reject) => {
+        fs.readFile(filePath, 'utf8', (err, data) => {
+            if (err) {
+                reject(err);
+            } else {
+                // Check if the file content is empty or only contains whitespace
+                const isEmpty = data.trim().length === 0;
+                resolve(isEmpty);
+            }
+        });
+    });
 }

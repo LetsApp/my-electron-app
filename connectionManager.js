@@ -1,5 +1,4 @@
 const https = require('https');
-require('electron-reloader')(module);
 
 exports.checkServerConnectivity= function(){
     return new Promise((resolve, reject) => {
